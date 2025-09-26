@@ -1,0 +1,72 @@
+/* CSS Reset / Normalize */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: 0.15s ease-in-out;
+}
+
+.btn--primary {
+  background: #265DAB;
+  color: #fff;
+}
+.btn--primary:hover {
+  background: rgb(33.3636363636, 81.6531100478, 150.1363636364);
+}
+.btn--primary:focus {
+  outline: 2px solid rgb(28.7272727273, 70.3062200957, 129.2727272727);
+  outline-offset: 2px;
+}
+
+.btn--secondary {
+  background: #F39C12;
+  color: #111;
+}
+.btn--secondary:hover {
+  background: rgb(224.1506024096, 141.8674698795, 11.3493975904);
+}
+
+/*# sourceMappingURL=framework.css.map */

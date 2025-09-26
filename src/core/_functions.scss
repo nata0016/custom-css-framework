@@ -1,20 +1,21 @@
-// Lighten color function
+@use "sass:color";
+
+// Lighten color function (modern)
 @function lighten-color($color, $amount) {
-    @return lighten($color, $amount);
-  }
-  
-  // Darken color function
-  @function darken-color($color, $amount) {
-    @return darken($color, $amount);
-  }
-  
-  // Get spacing by key
-  @function space($key) {
-    @return map-get($space, $key);
-  }
-  
-  // Get font size by scale
-  @function font-scale($name) {
-    @return map-get($scale-steps, $name);
-  }
-  
+  @return color.adjust($color, $lightness: $amount);
+}
+
+// Darken color function (modern)
+@function darken-color($color, $amount) {
+  @return color.adjust($color, $lightness: -$amount);
+}
+
+// Get spacing by key
+@function space($key) {
+  @return map-get($space, $key);
+}
+
+// Get font size by scale
+@function font-scale($name) {
+  @return map-get($scale-steps, $name);
+}
