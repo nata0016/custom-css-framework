@@ -1,0 +1,21 @@
+// Clearfix mixin
+@mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  // Responsive font size (fluid typography)
+  @mixin fluid-type($min-vw, $max-vw, $min-size, $max-size) {
+    font-size: $min-size;
+    @media screen and (min-width: $min-vw) {
+      font-size: calc(#{$min-size} + (#{$max-size} - #{$min-size}) * 
+                   ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw})));
+    }
+    @media screen and (min-width: $max-vw) {
+      font-size: $max-size;
+    }
+  }
+  
