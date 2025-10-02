@@ -1,0 +1,11 @@
+@use "../core/variables" as *;
+
+// Margin utilities
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-3 { margin: 1rem; }
+
+// Padding utilities
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }

@@ -1,0 +1,6 @@
+@use "../core/variables" as *;
+
+.text-primary { color: $color-primary; }
+.text-secondary { color: $color-secondary; }
+.bg-primary { background-color: $color-primary; }
+.bg-secondary { background-color: $color-secondary; }
