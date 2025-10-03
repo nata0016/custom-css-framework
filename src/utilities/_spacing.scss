@@ -1,11 +1,23 @@
 @use "../core/variables" as *;
 
-// Margin utilities
-.m-1 { margin: 0.25rem; }
-.m-2 { margin: 0.5rem; }
-.m-3 { margin: 1rem; }
+// from $space map defined in variables
+@each $k, $v in $space {
+  .m-#{$k}  { margin: $v; }
+  .mt-#{$k} { margin-top: $v; }
+  .mr-#{$k} { margin-right: $v; }
+  .mb-#{$k} { margin-bottom: $v; }
+  .ml-#{$k} { margin-left: $v; }
+  .mx-#{$k} { margin-left: $v; margin-right: $v; }
+  .my-#{$k} { margin-top: $v;  margin-bottom: $v; }
 
-// Padding utilities
-.p-1 { padding: 0.25rem; }
-.p-2 { padding: 0.5rem; }
-.p-3 { padding: 1rem; }
+  .p-#{$k}  { padding: $v; }
+  .pt-#{$k} { padding-top: $v; }
+  .pr-#{$k} { padding-right: $v; }
+  .pb-#{$k} { padding-bottom: $v; }
+  .pl-#{$k} { padding-left: $v; }
+  .px-#{$k} { padding-left: $v; padding-right: $v; }
+  .py-#{$k} { padding-top: $v;  padding-bottom: $v; }
+
+  .gap-#{$k} { gap: $v; } // great with flex/grid demos
+}
+

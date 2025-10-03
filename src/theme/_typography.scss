@@ -1,8 +1,11 @@
 @use "../core/variables" as *;
 
-h1 { font-size: 2.5rem; font-weight: 700; }
-h2 { font-size: 2rem; font-weight: 600; }
-h3 { font-size: 1.75rem; font-weight: 600; }
-p { font-size: 1rem; line-height: 1.5; margin-bottom: 1rem; }
-a { color: $color-primary; text-decoration: none; }
-a:hover { text-decoration: underline; }
+$weights: (300,400,600,700,800);
+@each $w in $weights {
+  .fw-#{$w} { font-weight: $w; }
+}
+
+@each $name, $size in $scale-steps {
+  .fs-#{$name} { font-size: $size; }
+}
+

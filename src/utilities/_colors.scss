@@ -1,6 +1,18 @@
 @use "../core/variables" as *;
 
-.text-primary { color: $color-primary; }
-.text-secondary { color: $color-secondary; }
-.bg-primary { background-color: $color-primary; }
-.bg-secondary { background-color: $color-secondary; }
+$colors: (
+  "primary":   $color-primary,
+  "secondary": $color-secondary,
+  "success":   $color-success,
+  "danger":    $color-danger,
+  "warning":   $color-warning,
+  "white":     $color-white,
+  "gray-200":  $color-neutral-200,
+  "gray-900":  $color-neutral-900
+);
+
+@each $name, $value in $colors {
+  .text-#{$name} { color: $value; }
+  .bg-#{$name}   { background-color: $value; }
+}
+
