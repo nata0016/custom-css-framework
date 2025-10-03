@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Framework Example</title>
-  <link rel="stylesheet" href="../dist/framework.css">
+  <link rel="stylesheet" href="../dist/framework.css" />
 </head>
 <body>
-  <h1>Hello Framework!</h1>
-  <button class="btn btn--primary">Primary Button</button>
-  <button class="btn btn--secondary">Secondary Button</button>
+  <main class="p-4">
+    <h1>Hello Framework!</h1>
+
+    <!-- Buttons -->
+    <section>
+      <h2>Buttons</h2>
+      <p>
+        <button class="btn btn--primary">Primary Button</button>
+        <button class="btn btn--secondary">Secondary Button</button>
+      </p>
+    </section>
+
+    <!-- Utilities -->
+    <section>
+      <h2>Utilities</h2>
+
+      <div class="p-3 bg-primary text-white mb-4">
+        This box uses <code>.p-3</code>, <code>.bg-primary</code>, and <code>.text-white</code>
+      </div>
+
+      <p class="fw-700 fs-lg mb-4">
+        This text uses <code>.fw-700</code> and <code>.fs-lg</code>
+      </p>
+
+      <div class="d-flex gap-4 mb-4">
+        <div class="border rounded p-2 shadow-sm">
+          This box uses <code>.border</code>, <code>.rounded</code>, <code>.shadow-sm</code>
+        </div>
+        <div class="border-0 p-2">
+          This box uses <code>.border-0</code> (no border)
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mb-4">
+        <div class="bg-gray-200 p-2">Grid item 1</div>
+        <div class="bg-gray-200 p-2">Grid item 2</div>
+      </div>
+    </section>
+
+    <!-- Theme -->
+    <section>
+      <h2>Theme</h2>
+      <h3>Heading H3</h3>
+      <p>
+        This paragraph uses the global theme styles.
+        <a href="#">A link</a>
+      </p>
+      <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+      </ul>
+      <blockquote>
+        This is a blockquote styled with the theme.
+      </blockquote>
+      <p>
+        Inline <code>code</code> sample
+      </p>
+    </section>
+
+    <!-- Components -->
+    <section>
+      <h2>Components</h2>
+
+      <form style="max-width: 320px; margin-bottom: 1.5rem;">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" />
+        <button class="btn btn--primary" type="submit">Submit</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ada</td><td>Lead</td></tr>
+          <tr><td>Lin</td><td>Dev</td></tr>
+          <tr><td>Sam</td><td>Designer</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 </body>
 </html>
+
+

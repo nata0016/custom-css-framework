@@ -1,3 +1,4 @@
+@use "../core/variables" as *;
 ul { list-style-type: disc; padding-left: 1.5rem; }
 ol { list-style-type: decimal; padding-left: 1.5rem; }
 blockquote { border-left: 4px solid $color-primary; padding-left: 1rem; font-style: italic; }
